@@ -27,8 +27,8 @@ export const options = [
   {
     backgroundSize: "cover",
     collectionUrl: "https://opensea.io/collection/doodles-official",
-    imageUrl: "https://vistapointe.net/images/pink-panther-wallpaper-2.jpg",
-    title: "Pink Panthers",
+    imageUrl: "./static/images/footer.png",
+    title: "Pipanths",
   },
   {
     backgroundSize: "cover",
@@ -42,6 +42,19 @@ export const options = [
     collectionUrl: "https://opensea.io/collection/boredapeyachtclub",
     imageUrl: "https://thumbs.dreamstime.com/b/fig-white-grape-10911840.jpg",
     title: "Fig & Grape",
+  },
+  {
+    backgroundSize: "cover",
+    collectionUrl: "https://opensea.io/assets/0x359fb071477a9ad82835768f5ce9a29a0e5c1575/1303",
+    imageUrl:
+    "https://fthmb.tqn.com/1LBGKoLrGTPYGRa2cGZWV1jY4RM=/1280x853/filters:fill(auto,1)/166963448-F-56b005105f9b58b7d01f7e61.jpg",
+    title: "Stamps",
+  },
+  {
+    backgroundSize: "cover",
+    collectionUrl: "https://opensea.io/collection/boredapeyachtclub",
+    imageUrl: "https://www.viaempresa.cat/uploads/s1/26/09/09/89/els-mites-sobre-l-ia-qye-hem-de-trencar-istock_11_640x380.jpeg",
+    title: "NFT IA",
   },
   {
     backgroundSize: "cover",
