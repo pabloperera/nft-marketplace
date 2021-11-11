@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { options } from "./constants";
-import logo from "./static/images/logo.png";
+import logo from "./static/images/fig-grape-logo2-retina-bl-300x146.png";
 import footer from "./static/images/footer.png";
 import { iframeResizer } from "iframe-resizer";
 import { Card, Col, Container, Row } from "react-bootstrap";
@@ -19,8 +19,9 @@ const App = () => {
       {/* {renderModal()} */}
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <div className="App-hero"><p>Marketplace</p></div>
         <p></p>
-        <i className="material-icons right">menu</i>
+        {/* <i className="material-icons right">menu</i> */}
       </header>
       <main className="App-main">
         <div className="App-hero">
