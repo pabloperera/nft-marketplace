@@ -8,7 +8,7 @@ import comingsoon3 from "./static/images/coming-soon-games.gif";
 import neon from "./static/images/neon-faq-01-150x150.png";
 import logofooter from "./static/images/logo-footer.png";
 import { iframeResizer } from "iframe-resizer";
-import { Card, Col, Container, Row, Navbar, Nav, NavDropdown, Carousel} from "react-bootstrap";
+import { Card, Col, Container, Row, Navbar, Nav, Carousel} from "react-bootstrap";
 import "./static/styles/App.css";
 import { SocialIcon } from 'react-social-icons';
 
@@ -20,46 +20,24 @@ const App = () => {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <div className="App-header-div">
-          <div className="App-logo-titulo">
-            <img src={logo} className="App-logo" alt="logo"/>
-          </div>
-          <div className="App-menu">
-           <Navbar collapseOnSelect expand="lg" bg="black" variant="dark">
-              <Container>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav">
-                  <Nav className="me-auto">
-                    <Nav.Link href="https://figandgrape.io/">Home |</Nav.Link>
-                    <Nav.Link href="#pricing">NFTs Creators |</Nav.Link>
-                    <Nav.Link href="https://figandgrape.io/landing/wp-content/uploads/Fig-Grape-whitepaper-en.pdf">Whitepaper |</Nav.Link>
-                    <Nav.Link href="mailto:mailto:comunicacion@figandgrape.io?Subject=Contact%20from%20nft">Contact Us |</Nav.Link>
-                    {/* <Nav.Link href="#pricing">FAQ |</Nav.Link> */}
-                    <a href="https://presale.figandgrape.io/"><button className="App-buy-button" > {'>'} BUY FIG TOKEN {'<'} </button></a>
-                    {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                      <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                      <NavDropdown.Item href="#action/3.2">
-                        Another action
-                      </NavDropdown.Item>
-                      <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                      <NavDropdown.Divider />
-                      <NavDropdown.Item href="#action/3.4">
-                        Separated link
-                      </NavDropdown.Item>
-                    </NavDropdown> */}
-                  </Nav>
-                  {/* <Nav>
-                    <Nav.Link href="#deets">More deets</Nav.Link>
-                    <Nav.Link eventKey={2} href="#memes">
-                      Dank memes
-                    </Nav.Link>
-                  </Nav> */}
-                </Navbar.Collapse>
-              </Container>
-            </Navbar>
-          </div>
-        </div>
+      <header className="App-header-div">
+      <Navbar collapseOnSelect expand="lg" bg="black" variant="dark">
+          <Container>
+          <Navbar.Brand href="#home"><img src={logo} className="App-logo" alt="logo"/></Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="me-auto">
+          </Nav>
+            <Nav>
+            <Nav.Link href="https://figandgrape.io/">Home |</Nav.Link>
+              <Nav.Link href="https://figandgrape.io/landing/wp-content/uploads/Fig-Grape-whitepaper-en.pdf">Whitepaper |</Nav.Link>
+              <Nav.Link href="mailto:mailto:comunicacion@figandgrape.io?Subject=Contact%20from%20nft">Contact Us |</Nav.Link>
+   
+            <a href="https://presale.figandgrape.io/"><button className="App-buy-button" > {'>'} BUY FIG TOKEN {'<'} </button></a>
+            </Nav>
+          </Navbar.Collapse>
+          </Container>
+        </Navbar>
       </header>
       <main className="App-main">
         <div className="App-bg-grape-background">
@@ -221,6 +199,8 @@ const App = () => {
               <img
                 className="App-carousel-frame"
                 src={fondoSlider}
+                height={"400px"}
+                width={"800px"}
                 alt="Third slide"
               />
 
