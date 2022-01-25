@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.13d3bba7.chunk.css",
+    "main.js": "/static/js/main.a036fc29.chunk.js",
+    "main.js.map": "/static/js/main.a036fc29.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.113aecd7.js",
+    "runtime-main.js.map": "/static/js/runtime-main.113aecd7.js.map",
+    "static/css/2.68a81a89.chunk.css": "/static/css/2.68a81a89.chunk.css",
+    "static/js/2.c3228a6e.chunk.js": "/static/js/2.c3228a6e.chunk.js",
+    "static/js/2.c3228a6e.chunk.js.map": "/static/js/2.c3228a6e.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.832f72bf15221c1b59ce70e4d63c00e4.js": "/precache-manifest.832f72bf15221c1b59ce70e4d63c00e4.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.68a81a89.chunk.css.map": "/static/css/2.68a81a89.chunk.css.map",
+    "static/css/main.13d3bba7.chunk.css.map": "/static/css/main.13d3bba7.chunk.css.map",
+    "static/js/2.c3228a6e.chunk.js.LICENSE.txt": "/static/js/2.c3228a6e.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/hero.d08ac708.gif",
+    "static/media/coming-soon-3d.gif": "/static/media/coming-soon-3d.c6c01c0b.gif",
+    "static/media/coming-soon-art.gif": "/static/media/coming-soon-art.a3ed77b1.gif",
+    "static/media/coming-soon-games.gif": "/static/media/coming-soon-games.64c0c429.gif",
+    "static/media/logo-footer.png": "/static/media/logo-footer.acad87d9.png",
+    "static/media/neon-faq-01-150x150.png": "/static/media/neon-faq-01-150x150.e65ec982.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.113aecd7.js",
+    "static/css/2.68a81a89.chunk.css",
+    "static/js/2.c3228a6e.chunk.js",
+    "static/css/main.13d3bba7.chunk.css",
+    "static/js/main.a036fc29.chunk.js"
+  ]
+}
