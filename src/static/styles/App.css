@@ -12,8 +12,8 @@
 .App-header {
   height: 8vh;
   padding: 0 5vmax;
-  display: flex;
-  flex-direction: row;
+  /* display: flex;
+  flex-direction: row; */
   align-items: center;
   /* justify-content: space-between; */
   font-size: calc(10px + 2vmin);
@@ -148,7 +148,7 @@
 }
 
 .App-menu{
-  float: right;
+  float: left;
   font-size: large;
   color: aqua;
 }
@@ -158,9 +158,19 @@ color: aqua;
 background-color: black;
 border-color: aqua;
 border-radius: 5px;
+margin-top: 5px;
 }
+.App-buy-button-footer{
+  color: aqua;
+  background-color: black;
+  border-color: aqua;
+  border-radius: 5px;
+  margin-top: 20px;
+  }
 .App-header-div{
 width: 90%;
+position: absolute;
+z-index: 1;
 }
 
 .App-titulo-intermedio{
@@ -196,7 +206,7 @@ padding-bottom: 5%;
 
 }
 .App-carousel{
-height: 350px;
+height: 430px;
 width: 100%;
 background-image: linear-gradient(to right, rgb(83, 1, 121) , rgb(52, 1, 68));
 color: white;
@@ -206,6 +216,7 @@ color: white;
 height: 300px;
 width: 100%;
 color: white;
+margin-top: 65px;
 }
 .App-texto-question{
   color: aqua;
@@ -240,6 +251,7 @@ background-color:black;
   height: 85px;
   align-items: center;
   position: static;
+  margin-bottom: 20px;
 }
 
 .App-follow{

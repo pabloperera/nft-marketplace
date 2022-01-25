@@ -33,10 +33,10 @@ const App = () => {
                   <Nav className="me-auto">
                     <Nav.Link href="https://figandgrape.io/">Home |</Nav.Link>
                     <Nav.Link href="#pricing">NFTs Creators |</Nav.Link>
-                    <Nav.Link href="#pricing">Whitepaper |</Nav.Link>
-                    <Nav.Link href="#pricing">Contact Us |</Nav.Link>
-                    <Nav.Link href="#pricing">FAQ |</Nav.Link>
-                    <button className="App-buy-button"> {'>'} BUY FIG TOKEN {'<'} </button>
+                    <Nav.Link href="https://figandgrape.io/landing/wp-content/uploads/Fig-Grape-whitepaper-en.pdf">Whitepaper |</Nav.Link>
+                    <Nav.Link href="mailto:mailto:comunicacion@figandgrape.io?Subject=Contact%20from%20nft">Contact Us |</Nav.Link>
+                    {/* <Nav.Link href="#pricing">FAQ |</Nav.Link> */}
+                    <a href="https://presale.figandgrape.io/"><button className="App-buy-button" > {'>'} BUY FIG TOKEN {'<'} </button></a>
                     {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                       <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                       <NavDropdown.Item href="#action/3.2">
@@ -214,7 +214,7 @@ const App = () => {
                   alt="neon"
                 />
                 <h3 className="App-texto-question">What is a non-fungible token (NFT)?</h3>
-                <p>NFT stands for Non Fungible Token. They are digital assets that represent a wide range of unique tangible and intangible items. Almost anything can be an NFT: from collectible sport cards or artwork to virtual real estate; music, photos, movies, the universe of possibilities is infinite.</p>
+                <p>NFT stands for Non Fungible Token. They are digital assets that represent a wide range of unique tangible and intangible items. Almost anything can be an NFT: from collectible sport cards or artwork to virtual real estate; music, photos, movies.</p>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -242,14 +242,14 @@ const App = () => {
       <footer className="App-footer">
         <Container>
           <Row>
-            <Col>
+            <Col sm={4}>
                   <img
                   className="App-logo-footer"
                   src={logofooter}
                   alt="logo-footer"
                   />
             </Col>
-            <Col>
+            <Col sm={4}>
               <Row>
                 <Row>
                   <h4 className="App-follow">follow us</h4>
@@ -280,8 +280,8 @@ const App = () => {
                     </Col>
               </Row>
             </Col>
-            <Col>
-              <button className="App-buy-button"> {'>'}{'>'} BUY FIG TOKEN {'<'}{'<'} </button>
+            <Col sm={4}>
+              <a href="https://presale.figandgrape.io/"><button className="App-buy-button-footer"> {'>'} BUY FIG TOKEN {'<'} </button></a>
             </Col>
           </Row>
         </Container>
