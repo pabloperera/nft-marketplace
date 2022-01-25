@@ -9,25 +9,38 @@ export const ASSET_URL =
 
 export const options = [
   {
-    backgroundPosition: "50% 60%",
-    backgroundSize: "1000px",
-    collectionUrl: "https://opensea.io/collection/kaiju-kingz",
+    backgroundPosition: "50% 50%",
+    backgroundSize: "cover",
+    collectionUrl: "https://opensea.io/collection/arboreum-test",
     imageUrl:
-      "https://mix931fm.com/files/2017/05/concert-crowd-ThinkstockPhotos-577332304.jpg",
-    title: "Soraya",
+      // "https://i.ibb.co/FHX1byd/carlos-marin-banner.jpg",
+      // "https://i.ibb.co/y0p2dKz/beto-banner-6.jpg",
+      "https://i.ibb.co/W6cr2Vm/beto-banner-9.jpg",
+    title: "Albert Cuevas",
   },
   {
-    backgroundPosition: "50% 90%",
-    backgroundSize: "1500px",
-    collectionUrl: "https://opensea.io/collection/jungle-freaks-by-trosley",
+    backgroundPosition: "50% 50%",
+    backgroundSize: "cover",
+    collectionUrl: "https://opensea.io/collection/arboreum-test",
     imageUrl:
-      "http://www.cambridgeblog.org/wp-content/uploads/2015/11/Music-and-the-Exotic-from-the-Renaissance-to-Mozart.jpg",
-    title: "Il Divo",
+      // "https://i.ibb.co/R0mrs3T/beto-banner-5.jpg" ,
+      // "https://i.ibb.co/7vSXM2C/banner.png",
+          // "https://i.ibb.co/qMQ5YqF/beto-banner-7.jpg",
+          "https://i.ibb.co/7VYY4Pt/beto-banner-8.jpg",
+      title: "Albert Cuevas",
+  },
+  {
+    backgroundPosition: "50% 50%",
+    backgroundSize: "cover",
+    collectionUrl: "https://opensea.io/collection/carlos-marin-test",
+    imageUrl:
+          " https://i.ibb.co/d0DCCTK/carlos-marin-banner.jpg",
+      title: "Carlos Marín",
   },
   {
     backgroundSize: "cover",
     collectionUrl: "https://opensea.io/collection/doodles-official",
-    imageUrl: "./static/images/footer.png",
+    imageUrl: "https://i.ibb.co/1zQV9Gt/pipanths-banner1.jpg",
     title: "Pipanths",
   },
   {
@@ -38,16 +51,16 @@ export const options = [
     title: "NFT 3D",
   },
   {
-    backgroundSize: "cover",
+    backgroundSize: "center",
     collectionUrl: "https://opensea.io/collection/boredapeyachtclub",
-    imageUrl: "https://thumbs.dreamstime.com/b/fig-white-grape-10911840.jpg",
+    imageUrl: "https://i.ibb.co/RB73S0r/cubos-creators-01.png",
     title: "Fig & Grape",
   },
   {
     backgroundSize: "cover",
     collectionUrl: "https://opensea.io/assets/0x359fb071477a9ad82835768f5ce9a29a0e5c1575/1303",
     imageUrl:
-    "https://fthmb.tqn.com/1LBGKoLrGTPYGRa2cGZWV1jY4RM=/1280x853/filters:fill(auto,1)/166963448-F-56b005105f9b58b7d01f7e61.jpg",
+    "https://images.moneycontrol.com/static-mcnews/2021/10/Stamps-ali-bakhtiari-81eOv8Vox8k-unsplash-770x433.jpg?impolicy=website&width=770&height=431",
     title: "Stamps",
   },
   {
@@ -55,13 +68,6 @@ export const options = [
     collectionUrl: "https://opensea.io/collection/boredapeyachtclub",
     imageUrl: "https://www.viaempresa.cat/uploads/s1/26/09/09/89/els-mites-sobre-l-ia-qye-hem-de-trencar-istock_11_640x380.jpeg",
     title: "NFT IA",
-  },
-  {
-    backgroundSize: "cover",
-    collectionUrl: "https://opensea.io/assets/0x359fb071477a9ad82835768f5ce9a29a0e5c1575/1303",
-    imageUrl:
-    "https://fthmb.tqn.com/1LBGKoLrGTPYGRa2cGZWV1jY4RM=/1280x853/filters:fill(auto,1)/166963448-F-56b005105f9b58b7d01f7e61.jpg",
-    title: "Stamps",
   },
 ];
 
