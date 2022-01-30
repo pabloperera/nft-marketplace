@@ -25,6 +25,7 @@
   left: 0;
   bottom: 0;
   right: 0;
+  background-color: black;
 }
 
 .App-iframe-os
@@ -69,7 +70,7 @@
   text-shadow: none;
 }
 
-.App-hero-image {
+/* .App-hero-image {
   position: absolute;
   top: 0;
   left: 0;
@@ -83,7 +84,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   opacity: 0.8;
-}
+} */
 
 .App-bg-grape-image {
   height:680px;
@@ -107,7 +108,8 @@
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 50px;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 .App-cubo-hero-1-image {
   height:500px;
@@ -133,13 +135,17 @@
 .App-texto-1{
   font-size: 50px;
   color: white;
-  padding-top: 20%;
+  padding-top: 10%;
+  padding-bottom: 3%;
+  
 }
 
 .App-texto-2{
   font-size: 20px;
   color: antiquewhite;
   margin-top: 5%;
+  text-align: left;
+  padding-bottom: 5%;
 }
 .App-logo-titulo{
   float: left;
@@ -158,6 +164,35 @@ border-color: aqua;
 border-radius: 5px;
 margin-top: 5px;
 }
+
+.btn-grad {background-image: linear-gradient(to right, #02AAB0 0%, #00CDAC  51%, #02AAB0  100%)}
+.btn-grad {
+   margin: 10px;
+   padding: 15px 30px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color:white;            
+   box-shadow: 0 0 10px #eee;
+   border-radius: 10px;
+   display: block;
+   width: 180px;
+   font-family:sans-serif;
+   margin-left:auto;
+   margin-right:auto;
+   display:block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: white;
+   text-decoration: none;
+ }
+.App-buttons{
+align-items: baseline;
+}
+
 .App-buy-button-footer{
   color: aqua;
   background-color: black;
@@ -195,7 +230,7 @@ width: 100%;
   background-position: center center;
   background-attachment: scroll;
   background-repeat: no-repeat;
-  float: right;
+  float: left;
 }
 .App-coming-soon{
 width: 100%;
@@ -205,15 +240,23 @@ padding-bottom: 5%;
 background-color: black;
 }
 .App-carousel{
-height: 430px;
-width: 100%;
-background-image: linear-gradient(to right, rgb(83, 1, 121) , rgb(52, 1, 68));
-color: white;
+color: black;
+padding-right: 8%;
+padding-left: 8%;
+padding-top: 3%;
 }
 
 .App-carousel-frame{
 width: 100%;
-color: white;
+color: black;
+}
+
+.App-card{
+  align-items: flex-end;
+  display: flex;
+  justify-content: center;                            
+  height: 300px;
+  background-image: linear-gradient(to right, rgb(83, 1, 121) , rgb(52, 1, 68));
 }
 .App-texto-question{
   color: aqua;
@@ -272,6 +315,22 @@ padding-left: 10%;
 align-items: center;
 background-color: black;
 padding-bottom: 30px;
+}
+
+.App-modal{
+  color: white;
+}
+.App-modal-header{
+  background-image: linear-gradient(to left, rgb(83, 1, 121) , rgb(52, 1, 68));
+}
+.App-modal-body{
+  background-image: linear-gradient(to left, rgb(83, 1, 121) , rgb(52, 1, 68));
+}
+.App-modal-footer{
+  background-image: linear-gradient(to left, rgb(83, 1, 121) , rgb(52, 1, 68));
+}
+.App-link{
+  text-decoration: none;
 }
 
 @keyframes App-logo-spin {
