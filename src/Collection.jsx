@@ -90,8 +90,13 @@ const Collection= (link) => {
                         <a href="https://presale.figandgrape.io/"><button className="App-buy-button-footer"> {'>'} BUY FIG TOKEN {'<'} </button></a>
                     </Col>
                     </Row>
+                    <Row>
+                        <div style={{alignItems: "center"}}>
+                    <h6 className="App-copyright">Copyright © 2022 Fig & Grape</h6>
+                        </div>
+                    </Row>
                 </Container>
-                <h6 className="App-copyright">Copyright © 2022 Fig & Grape</h6>
+
             </footer>
         </div>
         </>

@@ -76,7 +76,7 @@ const App = () => {
                             Artists
                           </button>
 
-                          <MyVerticallyCenteredModal
+                          <ModalArtists
                             show={modalShow}
                             onHide={() => setModalShow(false)} />
                         </>
@@ -84,7 +84,14 @@ const App = () => {
                     </Col>
                     <Col>
                       <div className="App-buttons">
-                        <button className="btn-grad">Collectors</button>
+                        <>
+                        <button className="btn-grad"  onClick={() => setModalShow(true)}>
+                          Collectors
+                        </button>
+                        <ModalCollectors
+                            show={modalShow}
+                            onHide={() => setModalShow(false)} />
+                        </>
                       </div>
                     </Col>
                   </Row>
@@ -105,7 +112,7 @@ const App = () => {
                       <img
                         className="App-carousel-frame"
                         src={fondoSlider}
-                        height={"400px"}
+                        height={"300px"}
                         width={"800px"}
                         alt="First slide" />
                       <Carousel.Caption>
@@ -122,7 +129,7 @@ const App = () => {
                       <img
                         className="App-carousel-frame"
                         src={fondoSlider}
-                        height={"400px"}
+                        height={"300px"}
                         width={"800px"}
                         alt="Second slide" />
 
@@ -133,14 +140,14 @@ const App = () => {
                           width={"150px"}
                           alt="neon" />
                         <h3 className="App-texto-question">What is a non-fungible token (NFT)?</h3>
-                        <p>NFT stands for Non Fungible Token. They are digital assets that represent a wide range of unique tangible and intangible items. Almost anything can be an NFT: from collectible sport cards or artwork to virtual real estate; music, photos, movies.</p>
+                        <p>NFT stands for Non Fungible Token. They are digital assets that represent a wide range of unique tangible and intangible items. Almost anything can be an NFT: Collectible sport cards, artwork, virtual real estate; music, movies.</p>
                       </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
                       <img
                         className="App-carousel-frame"
                         src={fondoSlider}
-                        height={"400px"}
+                        height={"300px"}
                         width={"800px"}
                         alt="Third slide" />
 
@@ -222,20 +229,17 @@ const App = () => {
 				<img className="postcard__img" src="https://i.ibb.co/NT4RQ2Y/3-nft-banner.jpg" alt="Title" />
 			</a>
 			<div className="postcard__text">
-				<h1 className="postcard__title green"><a href="https://nft.figandgrape.io">Pipaths</a></h1>
+				<h1 className="postcard__title green"><a href="https://nft.figandgrape.io">Pipanths</a></h1>
 				<div className="postcard__subtitle small">
-					<time>
-						<i className="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
-					</time>
 				</div>
 				<div className="postcard__bar"></div>
 				<div className="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
 				<ul className="postcard__tagbox">
-        <Link to="./collection" className="App-link">
+        {/* <Link to="./collection" className="App-link">
          <button className="btn-grad" onClick={() => {
                                 setCollectionUrl("https://opensea.io/collection/doodles-official");
                               } }>collection</button>
-        </Link>
+        </Link> */}
 				</ul>
 			</div>
       <a className="postcard__img_link" href="https://nft.figandgrape.io">
@@ -252,18 +256,15 @@ const App = () => {
 			<div className="postcard__text">
 				<h1 className="postcard__title yellow"><a href="https://nft.figandgrape.io">Gonzalo</a></h1>
 				<div className="postcard__subtitle small">
-					<time>
-						<i className="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
-					</time>
 				</div>
 				<div className="postcard__bar"></div>
 				<div className="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
 				<ul className="postcard__tagbox">
-        <Link to="./collection" className="App-link">
+        {/* <Link to="./collection" className="App-link">
          <button className="btn-grad" onClick={() => {
                                 setCollectionUrl("https://opensea.io/collection/cryptopunks");
                               } }>collection</button>
-        </Link>
+        </Link> */}
 				</ul>
 			</div>
       <a className="postcard__img_link" href="https://nft.figandgrape.io">
@@ -410,7 +411,7 @@ const App = () => {
 </>
   );
 };
-function MyVerticallyCenteredModal(props: JSX.IntrinsicAttributes & Omit<Pick<React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>, "key" | keyof React.HTMLAttributes<HTMLDivElement>> & { ref?: ((instance: HTMLDivElement | null) => void) | React.RefObject<HTMLDivElement> | null | undefined; }, BsPrefixProps<"div"> & ModalProps> & BsPrefixProps<"div"> & ModalProps & { children?: React.ReactNode; }) {
+function ModalArtists(props: JSX.IntrinsicAttributes & Omit<Pick<React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>, "key" | keyof React.HTMLAttributes<HTMLDivElement>> & { ref?: ((instance: HTMLDivElement | null) => void) | React.RefObject<HTMLDivElement> | null | undefined; }, BsPrefixProps<"div"> & ModalProps> & BsPrefixProps<"div"> & ModalProps & { children?: React.ReactNode; }) {
   return (
     <Modal
       {...props}
@@ -437,5 +438,34 @@ function MyVerticallyCenteredModal(props: JSX.IntrinsicAttributes & Omit<Pick<Re
       </Modal.Footer>
     </Modal>
   );
+  
+}function ModalCollectors(props: JSX.IntrinsicAttributes & Omit<Pick<React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>, "key" | keyof React.HTMLAttributes<HTMLDivElement>> & { ref?: ((instance: HTMLDivElement | null) => void) | React.RefObject<HTMLDivElement> | null | undefined; }, BsPrefixProps<"div"> & ModalProps> & BsPrefixProps<"div"> & ModalProps & { children?: React.ReactNode; }) {
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+      className="App-modal"
+    >
+      <Modal.Header className="App-modal-header" closeButton>
+        <Modal.Title className="App-texto-question" id="contained-modal-title-vcenter">
+          NFT Collectors
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body className="App-modal-body">
+        <h4>Collectors benefits</h4>
+        <p>
+        Accede antes a las colecciones más prometedoras.<br></br>
+        Entra en el sorteo de giveaways de NFT’s<br></br>
+        Recibe nuestro token FIG con la compra de NFTs en futuras colecciones<br></br>
+        </p>
+      </Modal.Body>
+      <Modal.Footer className="App-modal-footer">
+        <button className="App-buy-button" onClick={props.onHide}>Contact Us</button>
+      </Modal.Footer>
+    </Modal>
+  );
+  
 }
 export default App;
