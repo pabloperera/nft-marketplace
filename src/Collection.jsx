@@ -7,7 +7,12 @@ import logofooter from "./static/images/logo-footer.png";
 
 
 const Collection= (link) => {
+    // if (link == "" ) {
+    //     return (<>hola</>)
+
+    // }else  {
     return (
+
         <>
             <header className="App-header-div">
             <Navbar collapseOnSelect expand="lg" bg="black" variant="dark">
@@ -102,5 +107,6 @@ const Collection= (link) => {
         </>
     )
 }
+// }
 
 export default Collection
