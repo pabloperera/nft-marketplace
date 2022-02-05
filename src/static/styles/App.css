@@ -37,9 +37,6 @@
   height: 60px;
   background-color: white;
 }
-.App-link {
-  color: #61dafb;
-}
 
 .App-hero {
   height: 30vmin;
@@ -181,9 +178,29 @@ margin-top: 5px;
    font-family:sans-serif;
    margin-left:auto;
    margin-right:auto;
-   display:block;
  }
 
+ .App-wrap-button{
+  margin-left:auto;
+  margin-right:auto;
+ }
+.btn-grad-coming {background-image: linear-gradient(to right, #262727 0%, #3c0b4b  51%, #aa30c9  100%)}
+.btn-grad-coming {
+   margin: 10px;
+   padding: 15px 30px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color:white;            
+   box-shadow: 0 0 10px #eee;
+   border-radius: 10px;
+   display: block;
+   width: 180px;
+   font-family:sans-serif;
+   margin-left:auto;
+   margin-right:auto;
+ }
  .btn-grad:hover {
    background-position: right center; /* change the direction of the change here */
    color: white;
@@ -245,6 +262,7 @@ padding-right: 8%;
 padding-left: 8%;
 padding-top: 3%;
 }
+
 
 .App-carousel-frame{
 width: 100%;
@@ -331,6 +349,7 @@ padding-bottom: 30px;
 }
 .App-link{
   text-decoration: none;
+  color: #61dafb;
 }
 
 @keyframes App-logo-spin {

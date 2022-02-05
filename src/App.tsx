@@ -103,7 +103,72 @@ const App = () => {
           <div>
 
           </div>
+          {/* CAROUSEL QUESTIONS */}
           <div className="App-carousel">
+            {/* <Container> */}
+              <Card>
+                <div className="App-card">
+                  <Carousel interval={10000}>
+                    <Carousel.Item>
+                      <img
+                        className="App-carousel-frame"
+                        src={fondoSlider}
+                        height={"300px"}
+                        width={"800px"}
+                        alt="First slide" />
+                      <Carousel.Caption>
+                        <img
+                          src={neon}
+                          height={"150px"}
+                          width={"150px"}
+                          alt="neon" />
+                        <h3 className="App-texto-question">What is Grape NFT Marketplace?</h3>
+                        <p>Grape NFT Marketplace brings together international artists, VIP celebrities and the bests creators on a single platform to buy and sell premium and exclusive NFTs, and even create them in version 2.0!</p>
+                      </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                      <img
+                        className="App-carousel-frame"
+                        src={fondoSlider}
+                        height={"300px"}
+                        width={"800px"}
+                        alt="Second slide" />
+
+                      <Carousel.Caption>
+                        <img
+                          src={neon}
+                          height={"150px"}
+                          width={"150px"}
+                          alt="neon" />
+                        <h3 className="App-texto-question">What is a non-fungible token (NFT)?</h3>
+                        <p>NFT stands for Non Fungible Token. They are digital assets that represent a wide range of unique tangible and intangible items. Almost anything can be an NFT: Collectible sport cards, artwork, virtual real estate; music, movies.</p>
+                      </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                      <img
+                        className="App-carousel-frame"
+                        src={fondoSlider}
+                        height={"300px"}
+                        width={"800px"}
+                        alt="Third slide" />
+
+                      <Carousel.Caption>
+                        <img
+                          src={neon}
+                          height={"150px"}
+                          width={"150px"}
+                          alt="neon" />
+                        <h3 className="App-texto-question">How do I buy an NFT?</h3>
+                        <p>Very soon you will be able to carry out transactions as well as access digital assets of international creators and artists.</p>
+                      </Carousel.Caption>
+                    </Carousel.Item>
+                  </Carousel>
+                </div>
+              </Card>
+            {/* </Container> */}
+          </div>
+            {/* CARROUSER CON PASOS PARA COMPRAR */}
+            {/* <div className="App-carousel">
             <Container>
               <Card>
                 <div className="App-card">
@@ -164,9 +229,9 @@ const App = () => {
                   </Carousel>
                 </div>
               </Card>
-
             </Container>
-          </div>
+          </div> */}
+              {/* NFT EMBEBIDO  */}
           <h1 className="App-titulo-intermedio">Our Collections</h1>
            {/* card 1 */}
         <div className="App-card-new"> 
@@ -175,18 +240,14 @@ const App = () => {
             <img className="postcard__img" src="https://i.ibb.co/JBWWXQ0/1-nft-banner.jpg" alt="Title" />
           </a>
           <div className="postcard__text">
-            <h1 className="postcard__title blue"><a href="https://nft.figandgrape.io">Carlos Marín</a></h1>
+            <h1 className="postcard__title blue">Carlos Marín</h1>
             <div className="postcard__subtitle small">
             </div>
             <div className="postcard__bar"></div>
             <div className="postcard__preview-txt">
             Desde su juventud ha sido una persona inquieta a la que le han interesado las disciplinas que, de alguna forma, pudieran ayudar al encuentro de la paz interior de las personas, teniendo siempre la naturaleza arbórea como fuente de inspiración de sus obras dentro del proyecto Zensations & Arbóreum.              </div>
             <ul className="postcard__tagbox">
-            <Link to="./collection" className="App-link">
-             <button className="btn-grad" onClick={() => {
-                            setCollectionUrl("https://opensea.io/collection/carlos-marin-test");
-                          } }>collection</button>
-             </Link>
+             <button className="btn-grad-coming" >coming soon</button>
             </ul>
           </div>
           <a className="postcard__img_link" href="https://nft.figandgrape.io">
@@ -197,24 +258,26 @@ const App = () => {
 
         <div className="App-espacio-inter"></div>
 
-        {/* card 2 */}
+        {/* card 2 - arboreum */}
         <div className="App-card-new"> 
               <article className="postcard dark red">
             <a className="postcard__img_link" href="https://nft.figandgrape.io">
               <img className="postcard__img" src="https://i.ibb.co/GpjZz2q/2-nft-banner.jpg" alt="Title" />	
             </a>
             <div className="postcard__text">
-              <h1 className="postcard__title red"><a href="https://nft.figandgrape.io">Arboreum</a></h1>
+              <h1 className="postcard__title red">Arboreum</h1>
               <div className="postcard__subtitle small">
               </div>
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
               <ul className="postcard__tagbox">
+              <div className="App-wrap-button">
                 <Link to="./collection" className="App-link">
                 <button className="btn-grad" onClick={() => {
                                 setCollectionUrl("https://opensea.io/collection/arboreum-test");
                               } }>collection</button>
                 </Link>
+              </div>
               </ul>
             </div>
             <a className="postcard__img_link" href="https://nft.figandgrape.io">
@@ -222,6 +285,119 @@ const App = () => {
             </a>
           </article>
         </div>
+
+         {/* card 2 - Mandalas*/}
+         <div className="App-card-new"> 
+              <article className="postcard dark red">
+            <a className="postcard__img_link" href="https://nft.figandgrape.io">
+              <img className="postcard__img" src="https://i.ibb.co/y8HXX24/mandala-banner.jpg" alt="Title" />	
+            </a>
+            <div className="postcard__text">
+              <h1 className="postcard__title red">Mandalas</h1>
+              <div className="postcard__subtitle small">
+              </div>
+              <div className="postcard__bar"></div>
+              <div className="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+              <ul className="postcard__tagbox">
+              <div className="App-wrap-button">
+                <Link to="./collection" className="App-link">
+                <button className="btn-grad" onClick={() => {
+                                setCollectionUrl("https://opensea.io/collection/arboreum-test");
+                              } }>collection</button>
+                </Link>
+                </div>
+              </ul>
+            </div>
+            <a className="postcard__img_link" href="https://nft.figandgrape.io">
+              <img className="postcard__img" src="https://i.ibb.co/HDB1qY2/2-photo-banner.jpg" alt="Title" />	
+            </a>
+          </article>
+        </div>
+
+        {/* card 2 - Mikado*/}
+        <div className="App-card-new"> 
+              <article className="postcard dark red">
+            <a className="postcard__img_link" href="https://nft.figandgrape.io">
+              <img className="postcard__img" src="https://i.ibb.co/4KM7wqJ/mikado-banner.jpg" alt="Title" />	
+            </a>
+            <div className="postcard__text">
+              <h1 className="postcard__title red">Mikado</h1>
+              <div className="postcard__subtitle small">
+              </div>
+              <div className="postcard__bar"></div>
+              <div className="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+              <ul className="postcard__tagbox">
+                <div className="App-wrap-button">
+                <Link to="./collection" className="App-link">
+                <button className="btn-grad" onClick={() => {
+                                setCollectionUrl("https://opensea.io/collection/arboreum-test");
+                              } }>collection</button>
+                </Link>
+                </div>
+              </ul>
+            </div>
+            <a className="postcard__img_link" href="https://nft.figandgrape.io">
+              <img className="postcard__img" src="https://i.ibb.co/HDB1qY2/2-photo-banner.jpg" alt="Title" />	
+            </a>
+          </article>
+        </div>
+
+        {/* card 2 - Natura*/}
+        <div className="App-card-new"> 
+              <article className="postcard dark red">
+            <a className="postcard__img_link" href="https://nft.figandgrape.io">
+              <img className="postcard__img" src="https://i.ibb.co/LhrcxNj/natura-banner.jpg" alt="Title" />	
+            </a>
+            <div className="postcard__text">
+              <h1 className="postcard__title red">Natura</h1>
+              <div className="postcard__subtitle small">
+              </div>
+              <div className="postcard__bar"></div>
+              <div className="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+              <ul className="postcard__tagbox">
+                <div className="App-wrap-button">
+                <Link to="./collection" className="App-link">
+                <button className="btn-grad" onClick={() => {
+                                setCollectionUrl("https://opensea.io/collection/arboreum-test");
+                              } }>collection</button>
+                </Link>
+                </div>
+              </ul>
+            </div>
+            <a className="postcard__img_link" href="https://nft.figandgrape.io">
+              <img className="postcard__img" src="https://i.ibb.co/HDB1qY2/2-photo-banner.jpg" alt="Title" />	
+            </a>
+          </article>
+        </div>
+
+        {/* card 2 - Oniricus*/}
+          <div className="App-card-new"> 
+              <article className="postcard dark red">
+            <a className="postcard__img_link" href="https://nft.figandgrape.io">
+              <img className="postcard__img" src="https://i.ibb.co/z6wKxPj/oniricus-banner.jpg" alt="Title" />	
+            </a>
+            <div className="postcard__text">
+              <h1 className="postcard__title red">Oníricus</h1>
+              <div className="postcard__subtitle small">
+              </div>
+              <div className="postcard__bar"></div>
+              <div className="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+              <ul className="postcard__tagbox">
+              <div className="App-wrap-button">
+                <Link to="./collection" className="App-link">
+                <button className="btn-grad" onClick={() => {
+                                setCollectionUrl("https://opensea.io/collection/arboreum-test");
+                              } }>collection</button>
+                </Link>
+                </div>
+              </ul>
+            </div>
+            <a className="postcard__img_link" href="https://nft.figandgrape.io">
+              <img className="postcard__img" src="https://i.ibb.co/HDB1qY2/2-photo-banner.jpg" alt="Title" />	
+            </a>
+          </article>
+        </div>
+
        {/* card 3 */}
        <div className="App-card-new"> 
        <article className="postcard dark green">
@@ -229,12 +405,13 @@ const App = () => {
 				<img className="postcard__img" src="https://i.ibb.co/NT4RQ2Y/3-nft-banner.jpg" alt="Title" />
 			</a>
 			<div className="postcard__text">
-				<h1 className="postcard__title green"><a href="https://nft.figandgrape.io">Pipanths</a></h1>
+				<h1 className="postcard__title green">Pipanths</h1>
 				<div className="postcard__subtitle small">
 				</div>
 				<div className="postcard__bar"></div>
 				<div className="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
 				<ul className="postcard__tagbox">
+        <button className="btn-grad-coming" >coming soon</button>
         {/* <Link to="./collection" className="App-link">
          <button className="btn-grad" onClick={() => {
                                 setCollectionUrl("https://opensea.io/collection/doodles-official");
@@ -254,12 +431,13 @@ const App = () => {
 				<img className="postcard__img" src="https://i.ibb.co/P1ThN6h/4-nft-banner.jpg" alt="Title" />
 			</a>
 			<div className="postcard__text">
-				<h1 className="postcard__title yellow"><a href="https://nft.figandgrape.io">Gonzalo</a></h1>
+				<h1 className="postcard__title yellow">Gonzalo</h1>
 				<div className="postcard__subtitle small">
 				</div>
 				<div className="postcard__bar"></div>
 				<div className="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
 				<ul className="postcard__tagbox">
+        <button className="btn-grad-coming" >coming soon</button>
         {/* <Link to="./collection" className="App-link">
          <button className="btn-grad" onClick={() => {
                                 setCollectionUrl("https://opensea.io/collection/cryptopunks");
