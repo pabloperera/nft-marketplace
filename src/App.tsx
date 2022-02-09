@@ -274,7 +274,7 @@ const App = () => {
               </div>
               </ul>
             </div>
-              <img className="postcard__img" src="https://i.ibb.co/HDB1qY2/2-photo-banner.jpg" alt="Title" />	
+              <img className="postcard__img" src="https://i.ibb.co/7XvNf4z/Monasterio.jpg" alt="Title" />	
           </article>
         </div>
 
@@ -298,7 +298,7 @@ const App = () => {
                 </div>
               </ul>
             </div>
-              <img className="postcard__img" src="https://i.ibb.co/HDB1qY2/2-photo-banner.jpg" alt="Title" />	
+              <img className="postcard__img" src="https://i.ibb.co/7XvNf4z/Monasterio.jpg" alt="Title" />	
           </article>
         </div>
 
@@ -322,7 +322,7 @@ const App = () => {
                 </div>
               </ul>
             </div>
-              <img className="postcard__img" src="https://i.ibb.co/HDB1qY2/2-photo-banner.jpg" alt="Title" />	
+              <img className="postcard__img" src="https://i.ibb.co/7XvNf4z/Monasterio.jpg" alt="Title" />	
           </article>
         </div>
 
@@ -346,7 +346,7 @@ const App = () => {
                 </div>
               </ul>
             </div>
-              <img className="postcard__img" src="https://i.ibb.co/HDB1qY2/2-photo-banner.jpg" alt="Title" />	
+              <img className="postcard__img" src="https://i.ibb.co/7XvNf4z/Monasterio.jpg" alt="Title" />	
           </article>
         </div>
 
@@ -370,7 +370,7 @@ const App = () => {
                 </div>
               </ul>
             </div>
-              <img className="postcard__img" src="https://i.ibb.co/HDB1qY2/2-photo-banner.jpg" alt="Title" />	
+              <img className="postcard__img" src="https://i.ibb.co/7XvNf4z/Monasterio.jpg" alt="Title" />	
           </article>
         </div>
 
