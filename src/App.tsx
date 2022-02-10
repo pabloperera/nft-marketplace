@@ -20,7 +20,7 @@ import { setConstantValue } from "typescript";
 const App = () => {
   const [collectionUrl, setCollectionUrl] = useState("");
   const [modalShow, setModalShow] = React.useState(false);
-
+  const [modalShow2, setModalShow2] = React.useState(false);
   useEffect(() => {
     // console.log("resizing");
   });
@@ -85,12 +85,12 @@ const App = () => {
                     <Col>
                       <div className="App-buttons">
                         <>
-                        <button className="btn-grad"  onClick={() => setModalShow(true)}>
+                        <button className="btn-grad"  onClick={() => setModalShow2(true)}>
                           Collectors
                         </button>
                         <ModalCollectors
-                            show={modalShow}
-                            onHide={() => setModalShow(false)} />
+                            show={modalShow2}
+                            onHide={() => setModalShow2(false)} />
                         </>
                       </div>
                     </Col>
@@ -106,65 +106,71 @@ const App = () => {
           {/* CAROUSEL QUESTIONS */}
           <div className="App-carousel">
             {/* <Container> */}
-              <Card>
+              {/* <Card > */}
                 <div className="App-card">
-                  <Carousel interval={10000}>
-                    <Carousel.Item>
-                      <img
-                        className="App-carousel-frame"
-                        src={fondoSlider}
-                        height={"300px"}
-                        width={"800px"}
-                        alt="First slide" />
-                      <Carousel.Caption>
-                        <img
-                          src={neon}
-                          height={"150px"}
-                          width={"150px"}
-                          alt="neon" />
-                        <h3 className="App-texto-question">What is Grape NFT Marketplace?</h3>
-                        <p>Grape NFT Marketplace brings together international artists, VIP celebrities and the bests creators on a single platform to buy and sell premium and exclusive NFTs, and even create them in version 2.0!</p>
-                      </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                      <img
-                        className="App-carousel-frame"
-                        src={fondoSlider}
-                        height={"300px"}
-                        width={"800px"}
-                        alt="Second slide" />
+                  <Container>
+                    <Row>
+                      <Col>
+                        <Carousel interval={10000}>
+                          <Carousel.Item>
+                            <img
+                              className="App-carousel-frame"
+                              src={fondoSlider}
+                              height={"300px"}
+                              width={"800px"}
+                              alt="First slide" />
+                            <Carousel.Caption>
+                              <img
+                                src={neon}
+                                height={"150px"}
+                                width={"150px"}
+                                alt="neon" />
+                              <h3 className="App-texto-question">What is Grape NFT Marketplace?</h3>
+                              <p>Grape NFT Marketplace brings together international artists, VIP celebrities and the bests creators on a single platform to buy and sell premium and exclusive NFTs, and even create them in version 2.0!</p>
+                            </Carousel.Caption>
+                          </Carousel.Item>
+                          <Carousel.Item>
+                            <img
+                              className="App-carousel-frame"
+                              src={fondoSlider}
+                              height={"300px"}
+                              width={"800px"}
+                              alt="Second slide" />
 
-                      <Carousel.Caption>
-                        <img
-                          src={neon}
-                          height={"150px"}
-                          width={"150px"}
-                          alt="neon" />
-                        <h3 className="App-texto-question">What is a non-fungible token (NFT)?</h3>
-                        <p>NFT stands for Non Fungible Token. They are digital assets that represent a wide range of unique tangible and intangible items. Almost anything can be an NFT: Collectible sport cards, artwork, virtual real estate; music, movies.</p>
-                      </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                      <img
-                        className="App-carousel-frame"
-                        src={fondoSlider}
-                        height={"300px"}
-                        width={"800px"}
-                        alt="Third slide" />
+                            <Carousel.Caption>
+                              <img
+                                src={neon}
+                                height={"150px"}
+                                width={"150px"}
+                                alt="neon" />
+                              <h3 className="App-texto-question">What is a non-fungible token (NFT)?</h3>
+                              <p>NFT stands for Non Fungible Token. They are digital assets that represent a wide range of unique tangible and intangible items: Collectible sport cards, artwork, virtual real estate; music, movies.</p>
+                            </Carousel.Caption>
+                          </Carousel.Item>
+                          <Carousel.Item>
+                            <img
+                              className="App-carousel-frame"
+                              src={fondoSlider}
+                              height={"300px"}
+                              width={"800px"}
+                              alt="Third slide" />
 
-                      <Carousel.Caption>
-                        <img
-                          src={neon}
-                          height={"150px"}
-                          width={"150px"}
-                          alt="neon" />
-                        <h3 className="App-texto-question">How do I buy an NFT?</h3>
-                        <p>Very soon you will be able to carry out transactions as well as access digital assets of international creators and artists.</p>
-                      </Carousel.Caption>
-                    </Carousel.Item>
-                  </Carousel>
+                            <Carousel.Caption>
+                              <img
+                                src={neon}
+                                height={"150px"}
+                                width={"150px"}
+                                alt="neon" />
+                              <h3 className="App-texto-question">How do I buy an NFT?</h3>
+                              <p>Very soon you will be able to carry out transactions as well as access digital assets of international creators and artists.</p>
+                            </Carousel.Caption>
+                          </Carousel.Item>
+                        </Carousel>
+                      </Col>
+                    </Row>
+                  </Container>
                 </div>
-              </Card>
+              {/* </Card> */}
             {/* </Container> */}
           </div>
             {/* CARROUSER CON PASOS PARA COMPRAR */}
@@ -259,7 +265,7 @@ const App = () => {
               <article className="postcard dark red">
               <img className="postcard__img" src="https://i.ibb.co/GpjZz2q/2-nft-banner.jpg" alt="Title" />	
             <div className="postcard__text">
-              <h1 className="postcard__title red">Arboreum</h1>
+              <h1 className="postcard__title red">Arboreum - Albert Cuevas</h1>
               <div className="postcard__subtitle small">
               </div>
               <div className="postcard__bar"></div>
@@ -283,7 +289,7 @@ const App = () => {
               <article className="postcard dark red">
               <img className="postcard__img" src="https://i.ibb.co/y8HXX24/mandala-banner.jpg" alt="Title" />	
             <div className="postcard__text">
-              <h1 className="postcard__title red">Mandalas</h1>
+              <h1 className="postcard__title red">Mandalas - Albert Cuevas</h1>
               <div className="postcard__subtitle small">
               </div>
               <div className="postcard__bar"></div>
@@ -307,7 +313,7 @@ const App = () => {
               <article className="postcard dark red">
               <img className="postcard__img" src="https://i.ibb.co/4KM7wqJ/mikado-banner.jpg" alt="Title" />	
             <div className="postcard__text">
-              <h1 className="postcard__title red">Mikado</h1>
+              <h1 className="postcard__title red">Mikado - Albert Cuevas</h1>
               <div className="postcard__subtitle small">
               </div>
               <div className="postcard__bar"></div>
@@ -331,7 +337,7 @@ const App = () => {
               <article className="postcard dark red">
               <img className="postcard__img" src="https://i.ibb.co/LhrcxNj/natura-banner.jpg" alt="Title" />	
             <div className="postcard__text">
-              <h1 className="postcard__title red">Natura</h1>
+              <h1 className="postcard__title red">Natura - Albert Cuevas</h1>
               <div className="postcard__subtitle small">
               </div>
               <div className="postcard__bar"></div>
@@ -355,7 +361,7 @@ const App = () => {
               <article className="postcard dark red">
               <img className="postcard__img" src="https://i.ibb.co/z6wKxPj/oniricus-banner.jpg" alt="Title" />	
             <div className="postcard__text">
-              <h1 className="postcard__title red">Oníricus</h1>
+              <h1 className="postcard__title red">Oníricus - Albert Cuevas</h1>
               <div className="postcard__subtitle small">
               </div>
               <div className="postcard__bar"></div>
@@ -500,6 +506,11 @@ const App = () => {
                   </div>
                 </Col>
               </Row>
+              <Row>
+              <a href="mailto:mailto:comunicacion@figandgrape.io?Subject=Contact%20from%20nft">
+                <button className="App-buy-button" >Contact Us</button>
+              </a>
+              </Row>
             </Container>
           </div>
         </main>
@@ -576,13 +587,15 @@ function ModalArtists(props: JSX.IntrinsicAttributes & Omit<Pick<React.DetailedH
       <Modal.Body className="App-modal-body">
         <h4>Artists benefits</h4>
         <p>
-        Monetiza tus creaciones digitales.<br></br>
-        Exponlas en nuestro marketplace<br></br>
-        Ganarás en todas las transacciones futuras.<br></br>
+        Monetize your digital creations.<br></br>
+        Expose them in our market.<br></br>
+        You will earn on all future transactions.<br></br>
         </p>
       </Modal.Body>
       <Modal.Footer className="App-modal-footer">
+        <a href="mailto:mailto:comunicacion@figandgrape.io?Subject=Contact%20from%20nft">
         <button className="App-buy-button" onClick={props.onHide}>Contact Us</button>
+        </a>
       </Modal.Footer>
     </Modal>
   );
@@ -611,7 +624,9 @@ function ModalCollectors(props: JSX.IntrinsicAttributes & Omit<Pick<React.Detail
         </p>
       </Modal.Body>
       <Modal.Footer className="App-modal-footer">
+      <a href="mailto:mailto:comunicacion@figandgrape.io?Subject=Contact%20from%20nft">
         <button className="App-buy-button" onClick={props.onHide}>Contact Us</button>
+      </a>
       </Modal.Footer>
     </Modal>
   );
