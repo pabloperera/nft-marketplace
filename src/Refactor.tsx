@@ -39,6 +39,7 @@ import CardAlbert from "./static/components/CardAlbert";
 import CardGonzalo from "./static/components/CardGonzalo";
 import CardPipanths from "./static/components/CardPipanths";
 import fondo from "./static/images/grape-bg10.jpg";
+import FooterSubscribe from "./static/components/FooterSubscribe";
 
 export const Refactor = () => {
   const [collectionUrl, setCollectionUrl] = useState("");
@@ -59,6 +60,19 @@ export const Refactor = () => {
         <CardAlbert />
         <CardPipanths/>
       </HStack>
+      <HStack justify={"center"} spacing={8}>
+        <CardGonzalo/>
+        <CardAlbert />
+        <CardPipanths/>
+        <CardCarlos />
+      </HStack>
+      <HStack justify={"center"} spacing={8}>
+        <CardAlbert />
+        <CardPipanths/>
+        <CardGonzalo/>
+        <CardCarlos />
+      </HStack>
+      <FooterSubscribe/>
     </Stack>
   );
 };

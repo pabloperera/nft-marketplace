@@ -18,7 +18,7 @@ import backscreen2 from '../images/grape-bg2.jpg'
   
   export default function SocialProfileWithImage() {
     return (
-      <Center py={6}>
+      <Center py={12}>
         <Box
           maxW={'full'}
           w={'340px'}

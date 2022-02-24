@@ -44,7 +44,7 @@ export const WithSubnavigation = () => {
         px={{ base: 4 }}
         borderBottom={1}
         borderStyle={"solid"}
-        borderColor={useColorModeValue("blue.200", "blue.900")}
+        borderColor={useColorModeValue("blue.200", "gray.900")}
         align={"center"}
       >
         <Flex
@@ -81,7 +81,7 @@ export const WithSubnavigation = () => {
           direction={"row"}
           spacing={2}
         >
-          <Button
+          {/* <Button
             as="a"
             display={{ base: "none", md: "inline-flex" }}
             variant={"outline"}
@@ -97,7 +97,7 @@ export const WithSubnavigation = () => {
             }}
           >
             BUY YOUR NFT
-          </Button>
+          </Button> */}
           <Button
             as="a"
             display={{ base: "none", md: "inline-flex" }}
@@ -107,7 +107,7 @@ export const WithSubnavigation = () => {
             color={"#00ffff"}
             bg={"black"}
             borderColor={"cyan.300"}
-            href={"#"}
+            href={"https://presale.figandgrape.io"}
             _hover={{
               bg: "cyan.300",
               textColor: "black",
@@ -131,10 +131,10 @@ const DesktopNav = () => {
   const popoverContentBgColor = useColorModeValue("white", "gray.800");
 
   return (
-    <Stack direction={"row"} spacing={4}>
+    <Stack direction={"row"} spacing={4} >
       {NAV_ITEMS.map((navItem) => (
         <Box key={navItem.label}>
-          <Popover trigger={"hover"} placement={"bottom-start"}>
+          <Popover trigger={"hover"} placement={"bottom-start"} >
             <PopoverTrigger>
               <Link
                 p={2}

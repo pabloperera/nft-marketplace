@@ -18,7 +18,7 @@ import backscreen2 from '../images/colecciones/2-photo-banner.jpg'
   
   export default function SocialProfileWithImage() {
     return (
-      <Center py={6}>
+      <Center py={12}>
         <Box
           maxW={'340px'}
           w={'full'}

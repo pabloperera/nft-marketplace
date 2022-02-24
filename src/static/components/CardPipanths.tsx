@@ -18,7 +18,7 @@ import backscreen2 from '../images/colecciones/welcome-pipanths.png'
   
   export default function SocialProfileWithImage() {
     return (
-      <Center py={6}>
+      <Center py={12}>
         <Box
           maxW={'full'}
           w={'340px'}
@@ -51,7 +51,7 @@ import backscreen2 from '../images/colecciones/welcome-pipanths.png'
           <Box p={6}>
             <Stack spacing={0} align={'center'} mb={5}>
               <Heading fontSize={'2xl'} fontWeight={500} fontFamily={'body'}>
-                NFT Marketplace 
+                Pipanths
               </Heading>
               <Text color={'gray.500'} as='a' href='https://figandgrape.io'
               _hover={
@@ -59,7 +59,7 @@ import backscreen2 from '../images/colecciones/welcome-pipanths.png'
                       variant: 'ghost',
                       textColor: 'white'
                   }
-              }>Fig &amp; Grape </Text>
+              }>Obras Propias - Villamil Brothers  </Text>
             </Stack>
   
             <Stack direction={'row'} justify={'center'} spacing={6}>
