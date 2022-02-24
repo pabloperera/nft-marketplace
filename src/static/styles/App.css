@@ -155,12 +155,13 @@
 }
 
 .App-buy-button{
-color: aqua;
+color: #00ffff;
 background-color: black;
 border-color: aqua;
 border-radius: 5px;
-margin-top: 5px;
+margin-top: 2px;
 }
+
 
 .btn-grad {background-image: linear-gradient(to right, #02AAB0 0%, #00CDAC  51%, #02AAB0  100%)}
 .btn-grad {
